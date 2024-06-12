@@ -1,4 +1,4 @@
-````markdown
+
 # Angular 17 Server Side Rendering (SSR) Demo
 
 Este repositorio contiene los pasos básicos para configurar una demo de Server Side Rendering (SSR) en Angular 17 utilizando Angular Universal.
@@ -57,4 +57,3 @@ Para servir el proyecto de producción, utiliza:
 npm run serve:ssr
 ```
 Estos pasos te ayudarán a configurar una demo básica de SSR en Angular. Para una implementación más detallada y personalizada, modifica tu aplicación de acuerdo a tus necesidades específicas.
-
