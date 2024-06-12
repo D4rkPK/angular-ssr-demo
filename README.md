@@ -1,27 +1,60 @@
-# 
+````markdown
+# Angular 17 Server Side Rendering (SSR) Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Este repositorio contiene los pasos básicos para configurar una demo de Server Side Rendering (SSR) en Angular 17 utilizando Angular Universal.
 
-## Development server
+## Requisitos previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Asegúrate de tener Node.js y npm instalados en tu máquina.
 
-## Code scaffolding
+```bash
+# Instalar Angular CLI globalmente
+npm install -g @angular/cli
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Crear un nuevo proyecto de Angular
 
-## Build
+```bash
+# Crear un nuevo proyecto de Angular
+ng new my-ssr-project
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Configuración de SSR
 
-## Running unit tests
+Navega al directorio del proyecto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+cd my-ssr-project
+```
 
-## Running end-to-end tests
+Agrega Angular Universal a tu proyecto.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng add @nguniversal/express-engine
+```
 
-## Further help
+## Ejecución con SSR
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para ejecutar la aplicación Angular con SSR, utiliza el siguiente comando:
+
+```bash
+npm run dev:ssr
+```
+
+## Construcción para producción
+
+Para construir el proyecto para producción, ejecuta:
+
+```bash
+npm run build:ssr
+```
+
+## Servir el proyecto de producción
+
+Para servir el proyecto de producción, utiliza:
+
+```bash
+npm run serve:ssr
+```
+Estos pasos te ayudarán a configurar una demo básica de SSR en Angular. Para una implementación más detallada y personalizada, modifica tu aplicación de acuerdo a tus necesidades específicas.
+
